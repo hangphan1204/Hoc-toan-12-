@@ -1,0 +1,21 @@
+<!doctype html><html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbfaf7"><title>Gửi bài — Toán 12</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../common.js"></script><script defer src="../submit.js"></script></head>
+<body><header class="site-header"><div class="shell nav">
+<a class="brand" href="index.html"><span class="brand-icon">📖</span><span>Toán 12<small>học nhẹ nhàng · tiến vững vàng</small></span></a>
+<nav class="nav-links" aria-label="Điều hướng"><a data-nav href="index.html">Trang chủ</a><a data-nav href="gui-bai.html">Gửi bài</a><a data-nav href="giai-dap.html">Bài tập & Giải đáp</a><a data-nav href="luyen-tap.html">Luyện tập thêm</a></nav>
+</div></header><main><div class="shell"><div class="section-head"><div><h2>Gửi bài / Hỏi bài</h2><p>Dán link Drive và ghi rõ chỗ bạn đang vướng.</p></div><a href="index.html">← Trang chủ</a></div>
+<div class="grid-2"><section class="card form-card"><div class="iconbox peach">✈</div>
+<label>Họ tên hoặc nickname</label><input id="name" placeholder="Ví dụ: Minh Anh">
+<label>Lớp</label><input id="grade" placeholder="Ví dụ: 12A1">
+<label>Chủ đề</label><select id="topic"><option>Toán 12 - Chương I</option><option>Toán 12 - Chương II</option><option>Toán 12 - Chương III</option></select>
+<label>Tiêu đề câu hỏi</label><input id="title" placeholder="Ví dụ: Em chưa hiểu Câu 38">
+<label>Nội dung thắc mắc</label><textarea id="question" placeholder="Ghi rõ bước nào đang vướng..."></textarea>
+<label>Link Google Drive</label><input id="drive" placeholder="https://drive.google.com/...">
+<div class="info">Đặt quyền file thành <b>Bất kỳ ai có đường liên kết đều có thể xem</b> trước khi gửi.</div>
+<div class="actions"><button class="btn btn-primary" onclick="submitQuestion()">Gửi bài</button><button class="btn btn-ghost" onclick="clearForm()">Xóa nội dung</button></div><div id="status" class="status"></div></section>
+<aside class="card"><div class="iconbox blue">☁</div><h3>Bài đã gửi trên thiết bị này</h3><p class="muted small">Bản static đang lưu bằng localStorage. Khi nối Supabase sau này, admin sẽ xem được từ máy khác.</p><div id="sentList"></div></aside>
+</div></div></main><footer class="footer"><div class="shell footer-row"><span>Toán 12 · học · hỏi · luyện</span><span>HTML · GitHub · Vercel</span></div></footer></body></html>

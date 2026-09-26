@@ -1,0 +1,44 @@
+<!doctype html><html lang="vi"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#fbfaf7"><title>Luyện tập thêm — Toán 12</title>
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<script defer src="../common.js"></script><script defer src="../practice.js"></script></head>
+<body><header class="site-header"><div class="shell nav">
+<a class="brand" href="index.html"><span class="brand-icon">📖</span><span>Toán 12<small>học nhẹ nhàng · tiến vững vàng</small></span></a>
+<nav class="nav-links" aria-label="Điều hướng"><a data-nav href="index.html">Trang chủ</a><a data-nav href="gui-bai.html">Gửi bài</a><a data-nav href="giai-dap.html">Bài tập & Giải đáp</a><a data-nav href="luyen-tap.html">Luyện tập thêm</a></nav>
+</div></header><main><div class="shell">
+<div class="section-head"><div><h2>Bài tập luyện tập thêm</h2><p>Trắc nghiệm + điền đáp án, chấm tự động.</p></div><a href="index.html">← Trang chủ</a></div>
+<div class="grid-2">
+<section class="card">
+<!-- Chỉ cần copy block .quiz và đổi data-answer để thêm câu mới -->
+<div class="quiz" data-type="mcq" data-answer="B">
+  <h3>Câu 1 · Trắc nghiệm</h3>
+  <p>Nếu f′(x) &gt; 0 trên một khoảng thì hàm số:</p>
+  <label class="option"><input type="radio" name="q1" value="A"> A. Nghịch biến</label>
+  <label class="option"><input type="radio" name="q1" value="B"> B. Đồng biến</label>
+  <label class="option"><input type="radio" name="q1" value="C"> C. Không đổi</label>
+  <label class="option"><input type="radio" name="q1" value="D"> D. Không xác định</label>
+  <div class="explain">Đáp án B: f′(x) &gt; 0 thì hàm số đồng biến trên khoảng đó.</div>
+</div>
+<div class="quiz" data-type="number" data-answer="7" data-tolerance="0">
+  <h3>Câu 2 · Điền đáp án</h3>
+  <p>Hàm số y=(2x+m)/(x+1) có GTNN trên [0;4] bằng 3. Tìm m.</p>
+  <input class="answer-input" placeholder="Nhập đáp án">
+  <div class="explain">Đáp án: m=7.</div>
+</div>
+<div class="quiz" data-type="number" data-answer="106" data-tolerance="0">
+  <h3>Câu 3 · Điền đáp án</h3>
+  <p>75√2 xấp xỉ bao nhiêu mét? Làm tròn đến hàng đơn vị.</p>
+  <input class="answer-input" placeholder="Nhập số">
+  <div class="explain">Đáp án: 106 m.</div>
+</div>
+<div class="actions"><button class="btn btn-primary" onclick="gradeQuiz()">Nộp bài</button><button class="btn btn-ghost" onclick="resetQuiz()">Làm lại</button></div>
+<div id="result" class="result"></div>
+</section>
+<aside class="card">
+  <div class="iconbox sage">+</div><h3>Tự thêm câu bằng HTML</h3>
+  <p class="muted">Copy một block <code>.quiz</code> và đổi <code>data-answer</code>. Không cần sửa JavaScript.</p>
+  <div class="dev-note"><code>&lt;div class="quiz" data-type="mcq" data-answer="B"&gt;</code><br>... nội dung câu hỏi ...<br><code>&lt;/div&gt;</code></div>
+</aside>
+</div></div></main><footer class="footer"><div class="shell footer-row"><span>Toán 12 · học · hỏi · luyện</span><span>HTML · GitHub · Vercel</span></div></footer></body></html>
